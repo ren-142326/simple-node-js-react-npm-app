@@ -1,5 +1,5 @@
-import React, {StrictMode} from 'react';
-import createRoot from 'react-dom/clinet';
+import React, { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 
 it('renders without crashing', () => {
