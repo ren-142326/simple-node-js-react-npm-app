@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install -g nrm' 
-                sh 'nrm use taobao' 
+                sh 'npm config registry set https://registry.npmmirror.com/' 
                 sh 'npm install' 
             }
         }
